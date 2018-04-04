@@ -17,7 +17,7 @@ public class DrugController {
 	private DrugRepository drugRepository;
 	
 
-	
+	//for barcode detection
 	@RequestMapping(value="/drugs/{ean}")
 	public Drug getDrugByEan(@PathVariable("ean")String ean) {
 
@@ -35,7 +35,7 @@ public class DrugController {
 		
 		return drugRepository.findDrugNameSuggestion(name);
 	}
-	
+	//dummy mapping
 	@RequestMapping(value="/")
 	public String welcome(){
 		
